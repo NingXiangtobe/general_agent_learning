@@ -3,8 +3,8 @@ import time
 from typing import List
 from langchain_core.messages import BaseMessage, SystemMessage, message_to_dict, messages_from_dict
 
-from claude_code_mini.core.config import HOT_STATE_FILE, COLD_LOG_FILE, PLAN_FILE
-from claude_code_mini.core.locks import FILE_LOCK_MGR
+from agent.core.config import HOT_STATE_FILE, COLD_LOG_FILE, PLAN_FILE
+from agent.core.locks import FILE_LOCK_MGR
 
 
 def append_cold_log(role: str, content: str):

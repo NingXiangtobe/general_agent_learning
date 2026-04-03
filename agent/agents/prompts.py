@@ -1,8 +1,8 @@
 import os
 from langchain_core.messages import SystemMessage
-from claude_code_mini.core.config import OUTPUT_DIR
-from claude_code_mini.services.skill_loader import skill_loader_instance
-from claude_code_mini.tools.plan import read_plan_content
+from agent.core.config import OUTPUT_DIR
+from agent.services.skill_loader import skill_loader_instance
+from agent.tools.plan import read_plan_content
 
 SKILL_MENU = skill_loader_instance.get_descriptions()
 

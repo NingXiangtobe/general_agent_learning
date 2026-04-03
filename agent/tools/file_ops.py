@@ -2,7 +2,7 @@ from pathlib import Path
 from typing import Optional, Union
 from langchain_core.tools import tool
 
-from claude_code_mini.core.locks import FILE_LOCK_MGR
+from agent.core.locks import FILE_LOCK_MGR
 
 def safe_path(p: str) -> Path:
     path = Path(p).absolute()

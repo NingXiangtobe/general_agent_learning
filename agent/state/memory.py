@@ -2,7 +2,7 @@ import json
 from typing import List
 from langchain_core.messages import BaseMessage, ToolMessage, HumanMessage, AIMessage
 
-from claude_code_mini.core.config import base_llm, KEEP_RECENT
+from agent.core.config import base_llm, KEEP_RECENT
 
 def estimate_size(messages: List[BaseMessage]) -> int:
     """快速估算当前上下文长度 (字符级别)"""

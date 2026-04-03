@@ -3,16 +3,16 @@ import re
 from langchain_core.messages import HumanMessage, ToolMessage
 from langchain_core.tools import tool
 
-from claude_code_mini.core.config import child_llm
-from claude_code_mini.core.locks import FILE_LOCK_MGR
-from claude_code_mini.state.persistence import append_cold_log, PLAN_FILE
-from claude_code_mini.tools.plan import read_plan_content
-from claude_code_mini.agents.prompts import SUBAGENT_SYSTEM_PROMPT
+from agent.core.config import child_llm
+from agent.core.locks import FILE_LOCK_MGR
+from agent.state.persistence import append_cold_log, PLAN_FILE
+from agent.tools.plan import read_plan_content
+from agent.agents.prompts import SUBAGENT_SYSTEM_PROMPT
 
-from claude_code_mini.tools.os_cmd import powershell
-from claude_code_mini.tools.file_ops import read_file, write_file, edit_file
-from claude_code_mini.tools.skills_tool import load_skill
-from claude_code_mini.tools.web import web_search
+from agent.tools.os_cmd import powershell
+from agent.tools.file_ops import read_file, write_file, edit_file
+from agent.tools.skills_tool import load_skill
+from agent.tools.web import web_search
 
 CHILD_TOOLS = [powershell, read_file, write_file, edit_file, load_skill, web_search]
 CHILD_TOOL_MAP = {t.name: t for t in CHILD_TOOLS}

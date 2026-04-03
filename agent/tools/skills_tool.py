@@ -1,5 +1,5 @@
 from langchain_core.tools import tool
-from claude_code_mini.services.skill_loader import skill_loader_instance
+from agent.services.skill_loader import skill_loader_instance
 
 @tool
 def load_skill(name: str) -> str:

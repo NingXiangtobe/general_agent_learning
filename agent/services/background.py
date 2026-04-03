@@ -1,7 +1,7 @@
 import threading
 import uuid
 from queue import Queue
-from claude_code_mini.tools.os_cmd import powershell
+from agent.tools.os_cmd import powershell
 
 class BackgroundManager:
     def __init__(self):

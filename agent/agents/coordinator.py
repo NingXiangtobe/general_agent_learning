@@ -1,13 +1,13 @@
 from typing import List
 from langchain_core.messages import HumanMessage, AIMessage, ToolMessage, BaseMessage
 
-from claude_code_mini.core.config import base_llm, THRESHOLD_CHARS
-from claude_code_mini.state.persistence import save_hot_state, append_cold_log
-from claude_code_mini.state.memory import micro_compact, estimate_size, auto_compact
-from claude_code_mini.services.background import BG
-from claude_code_mini.tools import TOOLS, TOOL_MAP
-from claude_code_mini.agents.prompts import build_dynamic_system_prompt
-from claude_code_mini.tools.plan import read_plan_content
+from agent.core.config import base_llm, THRESHOLD_CHARS
+from agent.state.persistence import save_hot_state, append_cold_log
+from agent.state.memory import micro_compact, estimate_size, auto_compact
+from agent.services.background import BG
+from agent.tools import TOOLS, TOOL_MAP
+from agent.agents.prompts import build_dynamic_system_prompt
+from agent.tools.plan import read_plan_content
 
 # 绑定全局工具
 llm = base_llm.bind_tools(TOOLS)

@@ -1,5 +1,5 @@
 from langchain_core.tools import tool
-from claude_code_mini.services.background import BG
+from agent.services.background import BG
 
 @tool
 def background_run(command: str, timeout: int = 120) -> str:

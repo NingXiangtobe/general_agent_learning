@@ -1,9 +1,9 @@
 from typing import List
 from langchain_core.tools import tool
 from pydantic import BaseModel, Field
-from claude_code_mini.core.config import PLAN_FILE
-from claude_code_mini.core.locks import FILE_LOCK_MGR
-from claude_code_mini.tools.file_ops import smart_read_text
+from agent.core.config import PLAN_FILE
+from agent.core.locks import FILE_LOCK_MGR
+from agent.tools.file_ops import smart_read_text
 
 
 class PlanNode(BaseModel):

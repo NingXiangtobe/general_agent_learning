@@ -1,11 +1,11 @@
 import sys
 from langchain_core.messages import HumanMessage, AIMessage
 
-from claude_code_mini.core.config import PLAN_FILE, HOT_STATE_FILE
-from claude_code_mini.state.persistence import load_hot_state, append_cold_log, save_hot_state, \
+from agent.core.config import PLAN_FILE, HOT_STATE_FILE
+from agent.state.persistence import load_hot_state, append_cold_log, save_hot_state, \
     reset_workspace_for_new_task
-from claude_code_mini.tools.plan import read_plan_content
-from claude_code_mini.agents.coordinator import agent_loop
+from agent.tools.plan import read_plan_content
+from agent.agents.coordinator import agent_loop
 
 if __name__ == "__main__":
     print("--------------------原神启动--------------------------------")
