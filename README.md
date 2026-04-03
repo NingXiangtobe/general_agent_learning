@@ -1,4 +1,4 @@
-# ⚙️ [Project Name]: general_agent_learning
+# ⚙️ **general_agent_learning**
 The general agent assistant on the local machine
 ![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)
 ![LangChain](https://img.shields.io/badge/LangChain-Native-green.svg)
