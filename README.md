@@ -39,7 +39,7 @@ The general agent assistant on the local machine
 ### 📡 4. 后台异步支持
 * **Background Manager**：支持将超长耗时任务剥离主线程（Daemon 守护执行），不阻塞主脑决策。
 
-### 📡 5. 审计与溯源
+### 📋 5. 审计与溯源
 * **全链路日志记录，冷热快照**：整个链路每一处细节都可见
 
 ---
